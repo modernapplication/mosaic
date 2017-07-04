@@ -1,0 +1,63 @@
+{
+  "env": {
+    "development": {
+      "presets": [
+        [
+          "latest", {
+            "es2015": {
+              "modules": false
+            }
+          }
+        ],
+        "react"
+      ],
+      "plugins": [
+        "babel-plugin-root-import",
+        "babel-plugin-react-html-attrs",
+        "transform-class-properties",
+        "react-hot-loader/babel",
+        "syntax-object-rest-spread",
+        "transform-object-rest-spread"
+      ]
+    },
+    "production": {
+      "presets": [
+        [
+          "latest", {
+            "es2015": {
+              "modules": false
+            }
+          }
+        ],
+        "react"
+      ],
+      "plugins": [
+        "babel-plugin-root-import",
+        "babel-plugin-react-html-attrs",
+        "transform-class-properties",
+        "syntax-object-rest-spread",
+        "transform-object-rest-spread"
+      ]
+    },
+    "test": {
+      "presets": [
+        [
+          "latest", {
+            "es2015": {
+              "modules": false
+            }
+          }
+        ],
+        "react"
+      ],
+      "plugins": [
+        "babel-plugin-transform-es2015-modules-commonjs",
+        "babel-plugin-root-import",
+        "babel-plugin-react-html-attrs",
+        "transform-class-properties",
+        "syntax-object-rest-spread",
+        "transform-object-rest-spread",
+      ]
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "name": "mosaic",
+  "version": "0.0.1",
+  "description": "ssr react svg sass",
+  "main": "index.js",
+  "scripts": {
+    "serve": "set NODE_ENV=development&&webpack-dev-server --hot  --content-base ./ --config ./webpack/dev.js",
+    "build": "set NODE_ENV=production&&webpack --config ./webpack/prod.js"
+  },
+  "jest": {
+    "testRegex": "(/__tests__/.*|(\\.|/)(spec))\\.jsx?$",
+    "transformIgnorePatterns": [
+      "/node_modules/"
+    ],
+    "moduleNameMapper": {
+      "cats.html$": "<rootDir>/test/mocks/cats.js",
+      "sample-email.html$": "<rootDir>/test/mocks/sample-email.js"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/modernapplication/mosaic"
+  },
+  "author": "modern application llc",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.23.1",
+    "babel-loader": "^6.3.2",
+    "babel-plugin-react-html-attrs": "^2.0.0",
+    "babel-plugin-root-import": "^5.1.0",
+    "babel-plugin-syntax-object-rest-spread": "^6.8.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.24.0",
+    "babel-plugin-transform-object-rest-spread": "^6.8.0",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-latest": "^6.22.0",
+    "babel-preset-react": "^6.23.0",
+    "css-loader": "^0.28.0",
+    "cssnano": "^3.10.0",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "optimize-css-assets-webpack-plugin": "^1.3.1",
+    "react-addons-test-utils": "^15.5.1",
+    "react-hot-loader": "^3.0.0-beta.6",
+    "sass-loader": "^6.0.3",
+    "style-loader": "^0.16.1",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.4.1"
+  },
+  "dependencies": {
+    "node-sass": "^4.5.2",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  }
+}

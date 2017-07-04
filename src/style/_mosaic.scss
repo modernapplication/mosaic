@@ -1,0 +1,48 @@
+@import './_colors.scss';
+
+@keyframes color {
+  0% { fill: map-get($blue-palette, 'white'); }
+  15% { fill: map-get($blue-palette, 'a'); }
+  30% { fill: map-get($blue-palette, 'b'); }
+  45% { fill: map-get($blue-palette, 'c'); }
+  60% { fill: map-get($blue-palette, 'd'); }
+  75% { fill: map-get($blue-palette, 'e'); }
+  90% { fill: map-get($blue-palette, 'f'); }
+  100% { fill: map-get($blue-palette, 'g'); }
+} 
+
+[data-ran] {
+  animation: color 20s infinite;
+}
+[data-ran="0"] {
+  fill: map-get($blue-palette, 'white');
+  animation-direction: alternate;
+  animation-delay: .5s;
+}
+[data-ran="1"] {
+  fill: map-get($blue-palette, 'a');
+  animation-delay: 3s;
+}
+[data-ran="2"] {
+  fill: map-get($blue-palette, 'b');
+  animation-delay: 6s;
+  animation-direction: alternate;
+}
+[data-ran="3"] {
+  fill: map-get($blue-palette, 'c');
+  animation-delay: 1.5s;
+}
+[data-ran="4"] {
+  fill: map-get($blue-palette, 'd');
+  animation-delay: 4.2s;
+  animation-direction: alternate;
+}
+[data-ran="5"] {
+  fill: map-get($blue-palette, 'e');
+  animation-delay: 8.24s;
+}
+[data-ran="6"] {
+  fill: map-get($blue-palette, 'f');
+  animation-delay: 3.3s;
+  animation-direction: alternate;
+}
